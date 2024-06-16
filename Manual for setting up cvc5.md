@@ -35,5 +35,5 @@ The Python code can be written in any IDE. To run it, first cvc5 has to be insta
 - After the successful installation, cvc5 can be tested with further tests. These can be run in `cvc5/build` with the command `ctest`. For even more tests, you can build and run API- and unit-tests. For this, see [the cvc5 documentation](https://cvc5.github.io/docs/cvc5-1.1.1/installation/installation.html).
 
 Now that cvc5 is installed, you can start to use it. <br />
-If you want to use the LogicGenerator, now you can run the demo to verify if everything is running. <br />
+If you want to use the LogicGenerator, now you can run the [demonstration-file](demo.py) to verify that everything is running. <br />
 If you want to use cvc5 directly, for a quick start, you can look at the examples in `cvc5/examples/api/python/pythonic` and run them. Best start with `quickstart.py` since it goes through the basic logic of a small project. For more information on how to use the Pythonic API of cvc5, have a look at the [the Pythonic API documentation](https://cvc5.github.io/docs-ci/docs-main/api/python/pythonic/pythonic.html) or at the [overview and comparison of all examples in different languages](https://cvc5.github.io/docs-ci/docs-main/examples/examples.html).
