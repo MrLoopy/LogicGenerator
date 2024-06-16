@@ -27,18 +27,18 @@ if __name__ == '__main__':
     #
     # change parameters of LG if needed and fit them to your specific problem
     #
-    lg.setVersion('parallel')
-    lg.setExecutionMode('F')
-    lg.printConfig = True
-    lg.benchmark = False
-    lg.no_processes = 4
-    lg.depth = 2
+    lg.setVersion('parallel')       # Version can be basic, inc or parallel, recommended: parallel
+    lg.setExecutionMode('F')        # Mode can be F or ZV, recommended: F
+    lg.printConfig = True           # should a LUT-structure be printed if one is found, recommended: True
+    lg.benchmark = False            # if True, only output the final meassured time, recommended: False
+    lg.no_processes = 4             # How many parallel Processes should be started, only applicable if version == parallel
+    lg.depth = 2                    # How many parameters should set different processes appart, must be fitted to no_processes
 
-    lg.no_LUT = 2
-    lg.LUT_inputs = 4
-    lg.LUT_outputs = 1
-    lg.no_inputs = 6
-    lg.no_outputs = 1
+    lg.no_LUT = 2                   # numer of generated LUTs
+    lg.LUT_inputs = 4               # numer of generated inputs per LUT
+    lg.LUT_outputs = 1              # numer of generated outputs per LUT
+    lg.no_inputs = 6                # numer of global inputs of the problem
+    lg.no_outputs = 1               # numer of global outputs of the problem
 
     #
     # print the current parameters of LG
